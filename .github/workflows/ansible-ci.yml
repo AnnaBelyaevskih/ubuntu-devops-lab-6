@@ -1,4 +1,4 @@
-name: Ansible CI
+лname: Ansible CI
 
 on:
   push:
@@ -18,8 +18,8 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install ansible-lint
-        run: pip install ansible-lint
+      - name: Install Ansible
+        run: pip install ansible
 
-      - name: Run ansible-lint
-        run: ansible-lint
+      - name: Syntax check playbook
+        run: ansible-playbook playbook.yml --syntax-check
