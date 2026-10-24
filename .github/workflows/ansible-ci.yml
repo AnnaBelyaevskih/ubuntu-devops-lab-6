@@ -1,4 +1,4 @@
-лname: Ansible CI
+name: Ansible CI
 
 on:
   push:
